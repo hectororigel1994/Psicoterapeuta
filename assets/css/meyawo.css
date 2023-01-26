@@ -125,6 +125,9 @@ ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  color:#fff;
+  text-align: justify;
+  font-weight: 700;
 }
 
 ol ol,
@@ -132,6 +135,7 @@ ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0;
+
 }
 
 dt {
