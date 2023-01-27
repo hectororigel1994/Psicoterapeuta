@@ -31,6 +31,19 @@
 
 
 <style>
+
+.map-me {
+margin:0 0 -5px;
+display: block;
+max-width: 100%;
+width: 100%;
+box-sizing: border-box;
+}
+.map-me #map iframe {
+width: 100%;
+height: 378px;
+}
+
     .slider {
   max-width:1000px;
   margin: 0 auto;
@@ -380,12 +393,12 @@ button.slick-prev:hover {
                 <li class="item">
                     <a class="link" href="#services">Servicios</a>
                 </li>
-                <li class="item">
+                <!--<li class="item">
                     <a class="link" href="#testmonial">Testimonios</a>
                 </li>
                 <li class="item">
                     <a class="link" href="#blog">Blog</a>
-                </li>
+                </li>-->
                 <li class="item">
                     <a class="link" href="#contact">Contacto</a>
                 </li>
@@ -461,8 +474,28 @@ button.slick-prev:hover {
         </div><!-- end of container -->
     </section> <!-- end of about section -->
 
+
+    <section class="section-sm bg-primary">
+
+      <div class="container text-center text-sm-left">
+
+          <div class="row align-items-center">
+              <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                  <h6 class="title text-light wow fadeInLeft"  data-duration-in=".3" data-wow-delay="0.3s">¿Qúe es la neuropsicológica?</h6>
+                  <p class="m-0 text-light wow fadeInLeft"  data-duration-in=".3" data-wow-delay="0.6s">La evaluacion neuropsicológica esta conformada por un conjunto de métodos y técnicas estandarizadas mediante las cuales se valora cuantitativa y cúalitativamente
+                      el funcionamiento cognitivo en niños y adolecentes.
+                  </p>
+              </div>
+              <div class="col-sm offset-sm-2 offset-md-3">
+                  <button class="btn btn-lg my-font btn-light rounded wow fadeInRight" onclick="location.href='https://wa.me/527712027537'"  data-duration-in=".3" data-wow-delay="0.9s">Pedir información.</button>
+              </div>
+          </div> 
+      </div> 
+  </section> 
+
+
     <!-- service section -->
-    <section class="section" id="service">
+    <section class="section" id="services">
         <div class="container text-center">
             <p class="section-subtitle wow fadeInLeft"  data-duration-in=".3" data-wow-delay="0.3s" >Conoce lo que hacemos</p>
             <h6 class="section-title mb-6 wow fadeInRight"  data-duration-in=".3" data-wow-delay="0.6s">Servicios</h6>
@@ -481,13 +514,16 @@ button.slick-prev:hover {
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/team-1.jpg" alt="" class="">
-                            <h6 class="title wow fadeInUp"  data-duration-in=".3" data-wow-delay="0.3s">Psicoterapia Individual</h6>
-                            <p class="custom-text wow fadeInUp"  data-duration-in=".3" data-wow-delay="0.3s">Psicoterapia existencial fenomenologica</p>
+                            <h6 class="title wow fadeInUp"  data-duration-in=".3" data-wow-delay="0.3s">Psicoterapia Existencial Humanista</h6>
+                            <p class="custom-text wow fadeInUp"  data-duration-in=".3" data-wow-delay="0.3s"></p>
                             <button data-toggle="collapse" data-target="#service-1">Más información</button>
 
-<div id="service-1" class="collapse">
-<span style="font-size:20px; color: #695aa6;">Hola</span>
-</div>
+                            <div id="service-1" class="collapse">
+                              <div class="container text-justify" style="background-color: rgb(22, 22, 22);">
+                            <span style="font-size:20px; color: #695aa6;">El apoyo que el terapeuta existencial ofrece, sonsite en facilitar la exploración profunda y el analisis
+                            de los dilemas y paradojas propias de la existencia, así como de nuestra forma de enfrentarnos a ellas.</span>
+                        </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -495,12 +531,16 @@ button.slick-prev:hover {
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/team-2.jpg" alt="" class="">
-                            <h6 class="title wow fadeInUp"  data-duration-in=".3" data-wow-delay="0.5s">Terapia de pareja</h6>
-                            <p class="custom-text wow fadeInUp"  data-duration-in=".3" data-wow-delay="0.5s">Enfocada a relaciones con problemas</p>
+                            <h6 class="title wow fadeInUp"  data-duration-in=".3" data-wow-delay="0.5s">Psicoterapia de pareja</h6>
+                            <p class="custom-text wow fadeInUp"  data-duration-in=".3" data-wow-delay="0.5s"></p>
                             <button data-toggle="collapse" data-target="#service-2">Más información</button>
 
                             <div id="service-2" class="collapse">
-                            <span style="font-size:20px; color: #695aa6;">Hola</span>
+                              <div class="container text-justify" style="background-color: rgb(22, 22, 22);">
+                            <span style="font-size:20px; color: #695aa6;">La terapia de pareja tiene como objetivo explorar la experiencia relacional, analizar la etapa evolutiva
+                            de la relación, reflexionar las formas en como intentar resolver conflictos , las habilidades para comunicarse y los significados que estan presentes
+                          en la relación todo esto para ampliar las posibilidades de continuar en la relación si fuera el caso elaborar un final con gratitud y amor. </span>
+                        </div>
                             </div>
                         </div>
                     </div>
@@ -509,12 +549,14 @@ button.slick-prev:hover {
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/team-3.jpg" alt="" class="">
-                            <h6 class="title wow fadeInUp"  data-duration-in=".3" data-wow-delay="0.7s">Terapia Neuropsicológia</h6>
-                            <p class="custom-text wow fadeInUp"  data-duration-in=".3" data-wow-delay="0.7s">Valoración, intervencion y rehabilitación neuropsicológia en niños y adolecentes</p>
+                            <h6 class="title wow fadeInUp"  data-duration-in=".3" data-wow-delay="0.7s">Neuropsicológia</h6>
+                            <p class="custom-text wow fadeInUp"  data-duration-in=".3" data-wow-delay="0.7s"></p>
                             <button data-toggle="collapse" data-target="#service-3">Más información</button>
 
                             <div id="service-3" class="collapse">
-                            <span style="font-size:20px; color: #695aa6;">Hola</span>
+                              <div class="container text-justify" style="background-color: rgb(22, 22, 22);">
+                            <span style="font-size:20px; color: #695aa6;">Implementamos la neuropsicológia para poder analizar de forma exhaustiva la manera en la que se comporta el sujeto, por lo que es ventajoso a la hora de conocer cuáles son sus fortalezas y debilidades en cuanto a su desarrollo cognitivo.. </span>
+                        </div>
                             </div>
                           </div>
                     </div>
@@ -652,32 +694,15 @@ button.slick-prev:hover {
     </section>-->
 
     <!-- section -->
-    <!--
-    <section class="section-sm bg-primary">
 
-        <div class="container text-center text-sm-left">
-
-            <div class="row align-items-center">
-                <div class="col-sm offset-md-1 mb-4 mb-md-0">
-                    <h6 class="title text-light wow fadeInLeft"  data-duration-in=".3" data-wow-delay="0.3s">¿Qúe es la neuropsicológica?</h6>
-                    <p class="m-0 text-light wow fadeInLeft"  data-duration-in=".3" data-wow-delay="0.6s">La evaluacion neuropsicológica esta conformada por un conunto de métodos y técnicas mediante las cuales se valora cuantitativa y cúalitativamente
-                        el funcionamiento cognitivo en niños y adolecentes.
-                    </p>
-                </div>
-                <div class="col-sm offset-sm-2 offset-md-3">
-                    <button class="btn btn-lg my-font btn-light rounded wow fadeInRight" onclick="location.href='https://wa.me/527712027537'"  data-duration-in=".3" data-wow-delay="0.9s">Pedir información.</button>
-                </div>
-            </div> 
-        </div> 
-    </section> -->
-
+   
     <!-- testimonial section -->
-    <section class="section" id="testmonial">
+    <!--<section class="section" id="testmonial">
         <div class="container text-center">
             <p class="section-subtitle wow fadeInLeft"  data-duration-in=".3" data-wow-delay="0.3s">¿Qué dicen nuestos clientes</p>
             <h6 class="section-title mb-6 wow fadeInRight"  data-duration-in=".3" data-wow-delay="0.3s">Testmonios</h6>
 
-            <!-- row -->
+    
             <div class="row">
                 <div class="col-md-6 wow bounceInUp"  data-duration-in=".3" data-wow-delay="0.6s">
                     <div class="testimonial-card">
@@ -702,8 +727,9 @@ button.slick-prev:hover {
                     </div>
                 </div>
             </div>
-        </div> <!-- end of container -->
-    </section> <!-- end of testimonial section -->
+        </div> 
+    </section>
+  -->
 
     <div class="slider wow fadeInDownBig">
         <img src="assets/imgs/1.png" />
@@ -769,12 +795,12 @@ button.slick-prev:hover {
       </script>
     
     <!-- blog section -->
-    <section class="section" id="blog">
-        <!-- container -->
+    <!--<section class="section" id="blog">
+   
         <div class="container text-center">
             <p class="section-subtitle wow fadeInRight"  data-duration-in=".3" data-wow-delay="0.3s">Recientes publicaciones</p>
             <h6 class="section-title mb-6 wow fadeInLeft"  data-duration-in=".3" data-wow-delay="0.3s">Blog</h6>
-            <!-- blog-wrapper -->
+            
             <div class="blog-card">
                 <div class="blog-card-header wow fadeInLeft"  data-duration-in=".5" data-wow-delay="0.3s">
                     <img src="assets/imgs/img-1.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
@@ -782,18 +808,14 @@ button.slick-prev:hover {
                 <div class="blog-card-body wow fadeInRight"  data-duration-in=".5" data-wow-delay="0.3s">
                     <h5 class="blog-card-title">Qué es la neuropsicológia?</h6>
 
-                   <!-- <p class="blog-card-caption">
-                        <a href="#">By: Alan</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                        <a href="#"><i class="ti-comment"></i> 123</a>
-                    </p>-->
+
                     <p>Es una rama de la Neurociencia que estudia las relaciones entre el cerebro y la conducta tanto en sujetos sanos como en los que han sufrido algún tipo de daño cerebral. Su objeto de estudio  es el conocimiento de las bases neurales de los procesos mentales complejos.</p>
 
                     <a href="blog-1.html" class="blog-card-link">Leer más <i class="ti-angle-double-right"></i></a>
                 </div>
-            </div><!-- end of blog wrapper -->
+            </div>
 
-            <!-- blog-wrapper -->
+           
             <div class="blog-card">
                 <div class="blog-card-header wow fadeInLeft"  data-duration-in=".5" data-wow-delay="0.3s">
                     <img src="assets/imgs/img-2.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
@@ -801,11 +823,7 @@ button.slick-prev:hover {
                 <div class="blog-card-body wow fadeInRight"  data-duration-in=".5" data-wow-delay="0.3s">
                     <h5 class="blog-card-title">¿Por qué es importante tomar terapia?</h6>
 
-                    <!--<p class="blog-card-caption">
-                        <a href="#">By: Admin</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                        <a href="#"><i class="ti-comment"></i> 264</a>
-                    </p>-->
+          
                     
                     <p>
                         La terapia psicológica también es conocida como terapia de conversación, ha ayudado a millones de personas en el mundo. La terapia psicológica es de suma importancia ya que puede ayudarte a superar bloqueos emocionales y desarrollar estrategias que permitan afrontar tu presente o futuro. 
@@ -813,11 +831,19 @@ button.slick-prev:hover {
 
                     <a href="blog-2.html" class="blog-card-link">Leer más <i class="ti-angle-double-right"></i></a>
                 </div>
-            </div><!-- end of blog wrapper -->
+            </div>
 
-        </div><!-- end of container -->
-    </section><!-- end of blog section -->
+        </div>
+    </section> -->
+ <!-- blog section -->
 
+    <div class="wow slideInLeft map-me" style="visibility: visible; animation-name: slideInLeft;">
+      <div id="map">
+      <iframe allowfullscreen="" height="450" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746.4612832825287!2d-98.7362151!3d20.114794399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d109e2bb19d0bd%3A0xff81620aa4b1fc5c!2sTiro%20Para%C3%ADso%20123%2C%20Real%20de%20Minas%2C%2042090%20Pachuca%20de%20Soto%2C%20Hgo.!5e0!3m2!1ses-419!2smx!4v1674798539503!5m2!1ses-419!2smx" style="border:0;" width="600"></iframe>
+      </div>
+      </div>
+
+   
     <!-- contact section -->
     <section class="section wow bounceInUp"  data-duration-in=".3" data-wow-delay="0.3s" id="contact">
         <div class="container text-center">
